@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Brainxise - Your Daily Brain Exercise</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--game header and control-->
+    <!--score pannel-->
+    <main>
+        <header>
+            <div class="container">
+                <div class="row ">
+                    <div class="col">
+                        <h1 id="player-name"></h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="score-panel ">
+            <div class="container">
+                <div class="row">
+                    <div class="wraper">
+                        <div class="col">
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <div class="timer">
+                                <span>00 : 00 : 00</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="restart">
+                                <i class="fa fa-rotate-right"></i>
+                            </div>
+                            <div class="moves"> Moves : 0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--game cards-->
+        <section class="card-home">
+            <div class="container game-body">
+                <div class="row game-wraper">
+                    <!--cards distention-->
+                    <ul class="deck">
+                    </ul>
+                    <!--cards distention-->
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--game starter-->
+    <section id="gamestarting">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="wraper">
+                        <div class="loading">
+                            <img src="loading1.gif">
+                        </div>
+                        <h1>Welcome to Brainxise Matching Card Game </h1>
+                        <p> Enter Your Name and Choose Game Type to Play </p>
+                        <div class="callToAction" id="newplayer">
+                            <div class="AK-btn">
+                                <input type="text" id="palyername" value="SKIP" placeholder="Enter Your Name">
+                            </div>
+                            <p>Choose Game Card You Like</p>
+                            <div class="chose">
+                                <div class="chose-item active" data-type="pakemonGo" title="pakemonGo cards">
+                                    <span class="chose-icon"><i class="fa fa-check-square"></i> </span>
+                                    <img class="img-resposive" src="pikachu-2.svg">
+                                </div>
+                                <div class="chose-item" data-type="eduction" title="eduction cards">
+                                    <span class="chose-icon"><i class="fa fa-check-square"></i> </span>
+                                    <img class="img-resposive" src="eraser.svg">
+                                </div>
+                                <div class="chose-item" data-type="socialicons" title="socialicons cards">
+                                    <span class="chose-icon"><i class="fa fa-check-square"></i> </span>
+                                    <img class="img-resposive" src="twitter.svg">
+                                </div>
+                                <div class="chose-item" data-type="icons" title="icons cards">
+                                    <span class="chose-icon"><i class="fa fa-check-square"></i> </span>
+                                    <img class="img-resposive" src="012-spotify.svg">
+                                </div>
+                            </div>
+                            <div class="AK-btn">
+                                <input type="submit" value="start" class="AK-btn" id="startTheGame">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--game starter-->
+    <!--game modal-->
+    <section id="result" class="">
+        <div class="modal">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="modal-body">
+                            <div class="modal-content text-center">
+                                <p>congratulations <span id="playername"></span> you made it</p>
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="AK-btn"><button id="play-again">play again</button></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--game modal-->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

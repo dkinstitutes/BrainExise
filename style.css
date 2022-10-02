@@ -1,0 +1,362 @@
+main {
+  display: none;
+}
+
+.container {
+  margin: auto;
+  padding: 0 15px;
+}
+@media (min-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 720px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 920px) {
+  .container {
+    width: 920px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+:root {
+  font-size: 14px;
+}
+@media (max-width: 400px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+/*container*/
+/*row*/
+.row {
+  display: flex;
+  margin: 0 -15px;
+  align-items: center;
+  align-content: center;
+}
+
+/*row*/
+/*helper classes*/
+.AK-btn {
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+.AK-btn button, .AK-btn input {
+  box-shadow: -2px 7px 20px 2px rgba(46, 61, 73, 0.35);
+  border-radius: 20px;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.25rem;
+  width: 100%;
+  transition: all 0.6s ease-in-out;
+  background-color: #2e3d49;
+  box-shadow: 1px 1px 5px rgba(46, 61, 73, 0.4);
+}
+.AK-btn button[type=text], .AK-btn input[type=text] {
+  text-align: center;
+}
+.AK-btn button, .AK-btn input[type=submit] {
+  cursor: pointer;
+}
+.AK-btn button:hover, .AK-btn button:focus, .AK-btn button:active, .AK-btn input[type=submit]:hover, .AK-btn input[type=submit]:focus, .AK-btn input[type=submit]:active {
+  box-shadow: -2px 7px 20px 2px rgba(255, 255, 255, 0.05);
+  background-color: #e3e3e3;
+  color: #2e3d49;
+}
+
+#result .modal-body, .score-panel .wraper, #result .modal-content, #gamestarting .wraper, .card-home .deck {
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 320px) {
+  #result .modal-body, .score-panel .wraper, #result .modal-content, #gamestarting .wraper, .card-home .deck {
+    width: 100%;
+  }
+}
+@media (min-width: 520px) {
+  #result .modal-body, .score-panel .wraper, #result .modal-content, #gamestarting .wraper, .card-home .deck {
+    width: 80%;
+  }
+}
+@media (min-width: 680px) {
+  #result .modal-body, .score-panel .wraper, #result .modal-content, #gamestarting .wraper, .card-home .deck {
+    width: 70%;
+  }
+}
+@media (min-width: 950px) {
+  #result .modal-body, .score-panel .wraper, #result .modal-content, #gamestarting .wraper, .card-home .deck {
+    width: 95%;
+  }
+}
+@media (min-width: 1200px) {
+  #result .modal-body, .score-panel .wraper, #result .modal-content, #gamestarting .wraper, .card-home .deck {
+    width: 50%;
+  }
+}
+
+.stars {
+  padding: 0;
+  margin-right: auto;
+  display: block;
+  list-style: none;
+  flex-wrap: nowrap;
+}
+.stars li {
+  color: gold;
+  display: inline-block;
+}
+
+#gamestarting .callToAction .chose .chose-item, .card-home .deck li.card {
+  background: #2e3d49;
+  color: #2e3d49;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+#result .modal-content, #gamestarting .wraper, .card-home .deck {
+  background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+  border-radius: 10px;
+  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+  padding: 2%;
+}
+
+#result .modal-body, .score-panel .wraper {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+}
+
+.text-center, header h1 {
+  text-align: center;
+}
+
+.img-resposive {
+  max-width: 90%;
+}
+
+/*helper classes*/
+/*mixins*/
+/*mixins*/
+/*project frame work*/
+/*project */
+/*global*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color: #16fff3;;
+  background-image: linear-gradient(#16fff3, rgb(4, 238, 187));
+  background-blend-mode: overlay;
+  height: 100%;
+}
+
+/*global*/
+header .col {
+  width: 100%;
+}
+.score-panel .col {
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 400px) {
+  .score-panel .col {
+    font-size: 0.7rem;
+  }
+}
+.score-panel .col:first-of-type {
+  width: 50%;
+}
+.score-panel .col:nth-of-type(2) {
+  width: 50%;
+}
+.score-panel .restart {
+  overflow: hidden;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+.score-panel .moves {
+  margin: auto;
+}
+
+.card-home {
+  padding-bottom: 50px;
+}
+.card-home .col {
+  width: 50%;
+}
+.card-home .deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  list-style: none;
+}
+.card-home .deck li.card {
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  width: 20%;
+  margin: 1.6666666667%;
+}
+.card-home .deck li.card .img-resposive {
+  visibility: hidden;
+}
+.card-home .deck li.open {
+  transform: rotateY(0);
+  background: #ffffff;
+  cursor: default;
+}
+.card-home .deck li.show {
+  font-size: 33px;
+}
+.card-home .deck li.show .img-resposive {
+  visibility: visible;
+}
+.card-home .deck li.match {
+  cursor: default;
+  background: #02ccba;
+  font-size: 33px;
+}
+.card-home .deck li.wrong {
+  background: #e5534d;
+}
+
+/*modal*/
+/*game starting*/
+#gamestarting {
+  text-align: center;
+}
+#gamestarting .row {
+  justify-content: center;
+  align-items: center;
+}
+#gamestarting p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+#gamestarting .col {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #16fff3;
+  background-image: linear-gradient(#2534ff, rgb(4, 238, 187));
+  border-radius: 30px;
+}
+#gamestarting .wraper {
+  position: relative;
+  padding: 2rem 1rem;
+}
+#gamestarting .loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: -1;
+}
+#gamestarting .loading img {
+  display: block;
+  width: 100%;
+}
+#gamestarting .callToAction {
+  margin: auto;
+}
+@media (min-width: 450px) {
+  #gamestarting .callToAction {
+    width: 70%;
+  }
+}
+#gamestarting .callToAction .chose {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+#gamestarting .callToAction .chose .chose-item {
+  position: relative;
+  width: 40%;
+  margin: 5% 5%;
+  padding: 5%;
+  display: block;
+}
+#gamestarting .callToAction .chose .chose-item.active .chose-icon {
+  opacity: 1;
+}
+#gamestarting .callToAction .chose .chose-item .chose-icon {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.3rem;
+  font-size: 1.5rem;
+  opacity: 0;
+  color: #00b300;
+}
+
+#result {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#result.active {
+  display: block;
+}
+#result .col {
+  width: 100%;
+}
+#result .modal {
+  transition: all 1s ease-in-out;
+  transform: translate(2000px);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#result p {
+  font-size: 1.5rem;
+}
+#result ul {
+  font-size: 1.8rem;
+}
+#result .modal-content {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 100%;
+}
+
+/*game starting*/
+/*keyframs*/
+/*project */
